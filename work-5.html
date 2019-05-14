@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- jquery & iScroll -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.min.js"></script>
+    <!-- drawer.css -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Saira+Semi+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/drawer.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      $(document).ready(function() {
+        $('.drawer').drawer();
+      });
+    </script>
+  </head>
+  
+  <body class="drawer drawer--left drawer--sidebar works">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="index.html">works</a></li>
+          <li><a class="drawer-menu-item" href="about.html">about</a></li>
+          <li><a class="drawer-menu-item" href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" class="drawer-contents">
+      <!-- Page content -->
+      <h2><a href="index.html">toru otani</a></h2>
+      <div class="work-img-wrapper">
+        <img class="work-img" src="images/work-5-1.png">
+        <div class="caption ">
+          <h3>Illustrator課題「フライヤーデザイン」(訓練校課題)</h3>
+          <div class="dl-wrapper cf">
+            <dl class="dl-left">
+              <dt>・担当範囲</dt>
+              <dd>企画　/　ディレクション　/　デザイン　/　テキスト作成</dd>
+            </dl>
+            <dl>
+              <dt>・制作時間</dt>
+              <dd>企画 6/h　デザイン制作 6h　制作時期：2017/8/4～2017/8/5</dd>
+            </dl>
+          </div>
+          <p class="border">―</p>
+          <div class="concept-wrapper">
+            <h4>コンセプト</h4>
+            <p>訓練校アジャストアカデミーが開催する「小学生プログラミング教室」の宣伝フライヤーを、Illustratorで制作した。今回制作するフライヤーは実際に教室の宣伝に使用されるものではないが、ロゴや画像といった素材は同様の物を使用し、新たにフライヤーを制作するという想定で行った。</p>
+            <p>デザインの意図としては、教室申し込みという成果のためのメインターゲットは小学生の親御さんではあるが、このチラシを見た小学生のお子様にまずは教室に興味を持ってもらうため、インパクトのあるロボット工作の写真をメインに配置した。全体的な構成は、ランディングページに使用されているロゴのカラーをそのまま用いつつ、メインの写真のインパクトに合わせてロボット教室という見出しも大きく扱い、視認性の高いデザインを目指した。</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  
+</html>

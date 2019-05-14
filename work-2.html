@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- jquery & iScroll -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="js/drawer.min.js"></script>
+    <!-- drawer.css -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Saira+Semi+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/drawer.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      $(document).ready(function() {
+        $('.drawer').drawer();
+      });
+    </script>
+  </head>
+  
+  <body class="drawer drawer--left drawer--sidebar works">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="index.html">works</a></li>
+          <li><a class="drawer-menu-item" href="about.html">about</a></li>
+          <li><a class="drawer-menu-item" href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" class="drawer-contents">
+      <!-- Page content -->
+      <h2><a href="index.html">toru otani</a></h2>
+      <div class="work-img-wrapper">
+        <img class="work-img" src="images/work-2-1.png"><img class="work-img" src="images/work-2-2.png">
+        <div class="caption ">
+          <h3><span class="text">artist run space : im labor</span> <span class="text">webサイト</span></h3>
+          <div class="dl-wrapper cf">
+            <dl class="dl-left">
+              <dt>・担当範囲</dt>
+              <dd>企画　/　ディレクション　/　サイトデザイン　/　ロゴデザイン　/　コーディング</dd>
+            </dl>
+            <dl>
+              <dt>・制作時間</dt>
+              <dd>企画 12/h　デザイン制作 18/h　コーディング 12/h　制作時期：2017/8/1～2017/8/14</dd>
+            </dl>
+          </div>
+          <h4 class="url"><a href="http://imlabor.org/" target="_blank">http://imlabor.org</a></h4>
+          <p class="border">―</p>
+          <div class="concept-wrapper">
+            <h4>コンセプト</h4>
+            <p>クライアントはim labor という、ロンドンに拠点を持つアーティスト・ラン・ノマド・ギャラリー。2017年9月に発足した組織で、発足にあたり組織のwebサイトを制作させて頂いた。</p>
+            <p>コンセプトとしては、im labor という名称の由来が英語とドイツ語のダブルミーニング（英語: imlabor=労働者/独語: imlabor=実験中）になっているというこのスペースのコンセプトから、その理念をデザインにおいていかに視覚的に示すかという点を第一に考えた。</p>
+            <p>また、Webデザインに合わせてロゴも制作させて頂いた。今回はロゴの制作もWebデザインと同時であったため平行して制作。</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  
+</html>
