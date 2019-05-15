@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: 'Saira Semi Condensed', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",sans-serif;
-  font-feature-settings: "pkna";
+  font-family: 'Montserrat', 'Saira Semi Condensed', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",sans-serif;
+  /* font-feature-settings: "pkna"; */
+  color: #333;
 }
 
 .cf:after {
@@ -17,7 +18,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #637282;
+  transition: .3s;
 }
 
 .text {
@@ -26,8 +28,9 @@ a {
 
 /*nav
 -------------------------*/
-.works nav li:nth-child(1), .about nav li:nth-child(2), .contact nav li:nth-child(3) {
-  text-decoration-line: line-through;
+.works nav li:nth-child(1) > a, .about nav li:nth-child(2) > a, .contact nav li:nth-child(3) > a {
+  /* text-decoration-line: line-through; */
+  color: #0061ff;
 }
 
 
@@ -45,12 +48,19 @@ main h2 {
   top: 0;
   right: 0;
   z-index: 1;
+  font-weight: normal;
+}
+main h2 > a {
+  color: #333;
+}
+main h2 > a:hover {
+  color: #0061ff;
 }
 
 main .img-wrapper {
   width: 100%;
   box-sizing: border-box;
-  padding-right: 3%;
+  /* padding-right: 3%; */
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 100px;
@@ -265,5 +275,28 @@ main .work-img-wrapper .caption p.border {
   
   main .work-img-wrapper .concept-wrapper p {
     margin-bottom: 5%;
+  }
+}
+
+
+
+
+
+.drawer-brand {
+  color: #0061ff;
+}
+
+@media (min-width: 769px) {
+  .drawer-menu-item {
+    color: #637282;
+  }
+  .drawer--sidebar.drawer--left .drawer-nav {
+    background-color: #F7F9FA;
+  }
+  .drawer--sidebar .drawer-nav {
+    width: 14.5rem;
+  }
+  .drawer--sidebar.drawer--left .drawer-contents {
+    margin-left: 14.5rem;
   }
 }
