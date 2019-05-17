@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Montserrat', 'Saira Semi Condensed', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",sans-serif;
+  font-family: 'Saira Semi Condensed', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",sans-serif;
   /* font-feature-settings: "pkna"; */
   color: #333;
 }
@@ -28,7 +28,7 @@ a {
 
 /*nav
 -------------------------*/
-.works nav li:nth-child(1) > a, .about nav li:nth-child(2) > a, .contact nav li:nth-child(3) > a {
+.index nav li:nth-child(2) > a, .works nav li:nth-child(2) > a, .about nav li:nth-child(3) > a, .contact nav li:nth-child(4) > a {
   /* text-decoration-line: line-through; */
   color: #0061ff;
 }
@@ -63,7 +63,7 @@ main .img-wrapper {
   /* padding-right: 3%; */
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 main .img-wrapper a {
@@ -171,9 +171,11 @@ main .work-img-wrapper .dl-wrapper {
 }
 
 main .work-img-wrapper dl {
-  width: 45%;
+  width: 100%;
   float: left;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  margin-bottom: 20px;
+  line-height: 30px;
 }
 
 main .work-img-wrapper dl.dl-left {
@@ -181,12 +183,13 @@ main .work-img-wrapper dl.dl-left {
 }
 
 main .work-img-wrapper dt {
-  width: 30%;
+  /* width: 30%; */
   float: left;
+  padding-right: 50px;
 }
 
 main .work-img-wrapper dd {
-  width: 70%;
+  /* width: 70%; */
   float: left;
 }
 
@@ -280,10 +283,14 @@ main .work-img-wrapper .caption p.border {
 
 
 
-
+.drawer-menu {
+  letter-spacing: .075em;
+  /* padding-top: 30px;
+  padding-left: 15%; */
+}
 
 .drawer-brand {
-  color: #0061ff;
+  color: #0430d0;
 }
 
 @media (min-width: 769px) {
@@ -294,9 +301,9 @@ main .work-img-wrapper .caption p.border {
     background-color: #F7F9FA;
   }
   .drawer--sidebar .drawer-nav {
-    width: 14.5rem;
+    width: 18rem;
   }
   .drawer--sidebar.drawer--left .drawer-contents {
-    margin-left: 14.5rem;
+    margin-left: 18rem;
   }
 }
